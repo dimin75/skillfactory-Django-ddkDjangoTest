@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block title %}Page 2{% endblock %}
+
+{% block content %}
+    <p><em>This is page 2 content in italics.</em></p>
+    <p>{{ flatpage.content }}</p>
+    <p>{{ flatpage.content }}</p>
+    <a href="{% url 'home' %}">Back to Home</a>
+{% endblock %}
